@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀 병합하기</title>
+    <!-- CSS 적용 -->
+    <style>
+        table, tr, th, td { 
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 테이블 태그의 속성
+        cospan : 열을 합치는 것
+        rowspan : 행을 합치는 것
+    -->
+    <h1 align ="center"> 테이블 태그에서 셀 병합하기</h1>
+
+    <table border="1" width ="500" height = "100" align="center">
+        <tr><td align="center"><b>지역</b></td><td align="center"><b>현재기온</b></td><td colspan="3" align="center"><b>불쾌지수 / 습도 / 풍속</td></tr>
+        <tr><td rowspan="3" align="center">서울 / 경기도 / 제주도</td><td align="center">23</td><td align="center">60</td><td align="center">80</td><td align="center">4.7</td></tr>
+        <tr><td align="center">20</td><td align="center">60</td><td align="center">85</td><td align="center">5.0</td></tr>
+        <tr><td align="center">21</td><td align="center">65</td><td align="center">85</td><td align="center">3.8</td></tr>
+    </table>
+
+    <center>
+        <h2>이  력  서</h2> 
+        <h4 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■ 인적사항<h4 align="right">■ 취업희망직무 : &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   </h4>
+       
+        <table  border="1" width="700" height="100">
+            <tr><th rowspan="4">사진</th><th rowspan="2">성명</th><th>한글</th><th>&nbsp;</th><th>생년월일</th><th>   년   월   일</th></tr>
+            <tr><th>영문</th><th>&nbsp;</th><th>전화</th><th>    -   -   </th></tr>
+            <tr><th>이메일</th><th colspan="2">&nbsp;</th><th>휴대폰</th><th>   -   -   </th></tr>
+            <tr><th>주소</th><th colspan="4">&nbsp;</th></tr>
+        
+        </table>
+
+        <h4 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■ 학력사항</h4>
+        <table border="1" width="700" height="100">
+           <tr><th align="center">기간</th><th align="center">출  신  교</th><th align="center">전공</th><th align="center">졸업구분</th><th align="center">소재지</th></tr>
+           <tr><td align="center">년 월-    년월</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+           <tr><td align="center">년 월-    년월</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+        </table><br><br>
+
+        <table>
+
+            <h4 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■ 활동사항/ 수상내역</h4>
+            <table border="1" width="700" height="100">
+                <tr><th align="center">기간</th><th align="center">활동 내용</th><th align="center">활동 구분</th><th align="center">기관 및 장소</th></tr>
+                <tr><td align="center">년 월-    년월</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td align="center">년 월-    년월</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td align="center">년 월-    년월</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><th rowspan="3" align="center">수상내역</th><th colspan="2" align="center">내용</th><th align="center">기관</th></tr>
+                <tr><th colspan="2">&nbsp;</th><th>&nbsp;</th></tr>
+                <tr><th colspan="2">&nbsp;</th><th>&nbsp;</th></tr>
+
+
+        </table><br><br>
+
+        <h4 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■ 자격취득사항</h4>
+        <table border="1" width="700" height="100">
+            <tr><th align="center">자격증명</th><th align="center">시행기관</th><th align="center">취득년월</th></tr>
+            <tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+            <tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+            <tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+            
+        </table><br><br>
+        <h4 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■ 특이사항</h4>
+        <table border="1" width="700" height="50">
+            <tr><th align="center">취미</th><th align="center">특기</th></tr>
+            <tr><th>&nbsp;</th><th>&nbsp;</th></tr>
+
+        </table><br><br>
+        <h5>상기 내용은 사실과 다름없음을 확인합니다.</h5><br>
+        <h5 align="right">20 년 월 일 <ins>지원자:</ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+
+
+
+
+
+
+
+
+
+
+    </center>
+    
+
+
+
+</body>
+</html>

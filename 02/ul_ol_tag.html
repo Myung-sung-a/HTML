@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>u1(순서없는 목록), ol(순서있는 목록)  tag </title>
+</head>
+<body>
+    <!-- ul : 순서없는 목록 : "list-style type : disc", cicle, square, none
+         ol : 순서있는 목록 
+        
+        블락 형식으로 출력
+
+        -->
+    <h1> 순서없는 목록 (ul), 순서있는 목록(ol) </h1>
+
+    <h3> 순서없는 목록 출력 : u1 : disc </h3>
+    <ul>
+        <li> Apple </li>
+        <li> Banana </li>
+        <li> Orange </li>
+        <li> Lemon </li>
+
+    </ul>
+
+    <h3> 순서없는 목록 출력 : u1 : square </h3>
+    <ul style="list-style-type: square;">
+        <li> Apple </li>
+        <li> Banana </li>
+        <li> Orange </li>
+        <li> Lemon </li>
+
+    </ul>
+
+    <h3> 순서없는 목록 출력 : u1 : circle </h3>
+    <ul style="list-style-type: circle;">
+        <li> Apple </li>
+        <li> Banana </li>
+        <li> Orange </li>
+        <li> Lemon </li>
+
+    </ul>
+
+    <h3> 순서없는 목록 출력 : u1 : none </h3>
+    <ul style="list-style-type: none;">
+        <li> Apple </li>
+        <li> Banana </li>
+        <li> Orange </li>
+        <li> Lemon </li>
+
+    </ul>
+
+    <p /> <p />         <!-- br 태그가 4번-->
+
+    <hr>
+    <h3> 순서 있는 목록 : ol </h3>
+    <!-- type = "1"     <= 기본 값
+         type = "A"
+         type = "a"
+
+    
+    -->
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+    </ol>
+
+    <h3> 순서 있는 목록 : ol : A, B, C</h3>
+
+    <ol type ="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+    </ol>
+
+    <h3> 순서 있는 목록 : ol : a, b, c</h3>
+
+    <ol type ="a">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+    </ol>
+
+    <h3> 순서 있는 목록</h3>
+
+    <ol type ="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+    </ol>
+
+    <h3> 순서 있는 목록</h3>
+
+    <ol type ="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+    </ol>
+    
+
+    <hr>
+    <p /> <p />
+
+    <!-- UL을 사용하면서 출력방향을 변경 : display : inline -->
+    <ul style = "display: inline-flex;">
+        <li>회원가입</li>
+        <li>로그인</li>
+        <li>로그아웃</li>
+        <li>회사소개</li>
+        <li>메뉴</li>
+    </ul>
+    
+</body>
+</html>
