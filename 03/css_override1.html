@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 적용 시 충돌이 발생이 되었을 때 우선 순위 </title>
+
+    <!-- 외부의 css 파일을 불러들임 -->
+    <link type="text/css" rel="stylesheet" href="css/external2.css"/>
+
+    <!-- 내부에서 동일한 태그에 대해서 충돌 발생시킴-->
+    <style>
+        p{color: blue;
+            background-color: hotpink !important; 
+
+             
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1> CSS 적용 시 충돌이 발생이 되었을 때 우선 순위 </h1>
+    <!--
+        CSS 적용은 상속되고, 누적에서 적용
+        그러나 특정 속성은 충돌이 발생 될 수 있다.
+
+        동일한 속성에 대해서 css가 충돌이 발행될 수 있다.
+
+        1. 브라우저에 기본 설정                 <우선 순위5>
+        2. 외부에서 적용한 css                  <우선 순위4>
+        3. 내부에서 적용한 css                  <우선 순위3>
+        4. 인라인(태그, 엘리멘트)적용한 css     <우선 순위2>
+        5. important                            <우선 순위1>
+
+    -->
+
+    <p style="color: green; background-color: aqua;"> css가 중복 적용된 경우 작동 </p>
+    
+</body>
+</html>
