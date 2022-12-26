@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid red;
+            width: 100px; height: 100px;
+            background-color: yellow;
+            margin: 50px;
+            /*transition: width 3s, height 3s, boder 3s, transform 3s;*/
+            transition-duration: 3s;
+        }
+        div:hover {
+            width: 300px; height: 300px;
+            border: 3px dotted blue;
+            background-color: brown;
+            transform: rotate(360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div> 마우스를 올리면 회전하면서 커집니다. </div>
+    
+</body>
+</html>
