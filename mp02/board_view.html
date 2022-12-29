@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뷰 </title>
+    
+    
+    <style>
+        
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: "맑은 고딕", "돋움";
+        font-size: 12px;
+        color: #444444;
+    }
+    ul { list-style: none;}
+    .clear { clear: both;}
+    #wrap {
+        width: 970px;
+        margin: 0 auto;
+         /* border: 1px solid red;  */
+    }
+
+
+        /* 헤더 CSS */
+        header {
+            height: 100px;
+            position: relative;
+        }
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        #top_menu {
+            position: absolute;
+            top: 10px;
+            left: 770px;
+        }
+        #main_menu {
+            width: 757px;
+            height: 38px;
+            background-image: url("img/main_menu_bg.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 40px;
+            left: 210px;
+        }
+        #main_menu li {
+            display: inline-block;
+            margin: 12px 30px 0 50px;
+            font-size: 13px;
+        }
+        #main_menu a:link {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        #main_menu a:hover {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        #main_menu a:visited {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        #main_menu a:active {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        /* aside CSS */
+            /* 로그인 CSS*/
+        aside {
+            width: 190px;
+            float: left;
+        }
+        #login_box {
+            width: 186px;
+            height: 120px;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+            background-color: #f3f3f3;
+        }
+        #login_title { margin: 10px 0 0 10px; }
+        #input_button { margin: 10px 0 0 10px;}
+        #login_input { float: left;}
+        #login_btn {
+            float: left;
+            margin: 3px 0 0 5px;
+        }
+        #login_input input {
+            width: 100px;
+            height: 20px;
+            border: 1px solid #dddddd;
+        }
+        #login_input li { margin-top: 2px;}
+        #join_search { margin: 10px 0 0 5px;}
+
+          /* 서브 메뉴 만들기 */
+          aside #sub_menu {
+            width: 186px;
+            height: 328px;
+            margin-top: 15px;
+            background-image: url(img/sub_menu_bg.png);
+            background-repeat: no-repeat;
+             /* border: 1px solid blue;  */
+        }
+        aside #sub_menu ul {
+            padding: 80px 0 0 30px;
+        }
+        aside #sub_menu li {
+            margin: 10px 0 0 0;
+        }
+        aside #sub_menu a:link {
+            text-decoration: none;
+            font-size: 14px;
+        }
+        aside #sub_menu a:hover {
+            text-decoration: none;
+            font-size: 14px;
+            color: #0000ff;
+            font-weight: bold;
+        }
+        aside #sub_menu a:visited {
+            text-decoration: none;
+            font-size: 14px;
+            color: #444444;
+        }
+        aside #sub_menu a:active {
+            text-decoration: none;
+            font-size: 14px;
+            color: #444444;
+        }
+        article #sub_banner {
+            width: 180px;
+            height: 153px;
+            margin-top: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+        }       /* 왼쪽 하단 서브메뉴 끝 */
+
+        section#main {
+            float: right;
+             /* border: 1px solid blueviolet;  */
+        }
+        section#main h2#board_title {
+            margin-top: 20px;
+            padding: 0 0 5px 0;
+        }
+        section#main #view_title_box {
+            margin: 10px 0 0 0;
+            padding: 10px;
+            border-top: solid 2px #aaaaaa;
+            background-color: #eeeeee;
+        }
+        section#main #view_title_box #info {
+            margin: 0 0 0 270px;
+        }
+        section#main #view_content {
+            padding: 20px 10px 10px 10px;
+            line-height: 150%;
+        }
+        section#main #comment_box {
+            height: 112px;
+            position: relative;
+            background-color: #efefef;
+            border-top: solid 1px #cccccc;
+        }
+        section#main #comment_box #title_comment {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        section#main #comment_box textarea {
+            width: 515px;
+            height: 78px;
+            position: absolute;
+            top: 15px;
+            left: 145px;
+        }
+        section#main #comment_box #ok_ripple {
+            position: absolute;
+            top: 15px;
+            left: 670px;
+        }
+        section #buttons {
+            text-align: right;
+            max-width: 20px 0 0 0;
+        }
+      
+      
+        
+
+        /* footer CSS */
+        footer {
+            height: 100px;
+            margin-top: 780px;
+            border-top: 1px solid #bbbbbb;
+            /* border: 1px solid red; */
+        }
+
+        #footer_logo {
+            float: left;
+            margin: 5px 0 0 210px;
+        }
+        #address {
+            float: left;
+            margin: 20px 0 0 50px;
+        }
+        #footer_sns {
+            float: right;
+            margin: 20px 10px 0 0;
+        }
+        #footer_sns li {
+            display: inline;
+        }
+         
+      
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+
+    <!-- 헤더 시작 -->
+    <header>
+    <a href="MP02_index.html"><img id="logo" src="../mp02/img/logo.png"></a>
+    <nav id="top_menu">
+        HOME | LOGIN | JOIN | NOTICE
+    </nav>
+    <nav id="main_menu">
+        <ul>
+            <li><a href="MP02_board_list.html">자유 게시판</a></li>
+            <li><a href="#">기타 연주</a></li>
+            <li><a href="#">공동 구매</a></li>
+            <li><a href="#">연주회 안내</a></li>
+            <li><a href="#">회원 게시판</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- 헤더 끝 -->
+
+
+
+    <!-- aside 시작 -->
+        <!-- 로그인 -->
+    <aside>
+        <article id="login_box">
+            <img id="login_title" src="img/ttl_login.png">
+            <div id="input_button">
+                <ul id="login_input">
+                    <li><input type="text"></li>
+                    <li><input type="password"></li>
+                </ul>
+                <img id="login_btn" src="img/btn_login.gif">
+            </div>
+            <div class="clear"></div>
+            <div id="join_search">
+                <img src="img/btn_join.gif">
+                <img src="img/btn_search.gif">
+            </div>
+        </article>
+        <nav id="sub_menu">
+            <ul>
+                <li><a href="board_list.html">+ 자유게시판</a></li>
+                <li><a href="#">+ 방명록</a></li>
+                <li><a href="#">+ 공지사항</a></li>
+                <li><a href="#">+ 등업 요청</a></li>
+                <li><a href="#">+ 포토갤러리</a></li>
+            </ul>
+           </nav>           <!--서브메뉴 끝 --> 
+           <article id="sub_banner">
+            <ul id="sub_banner">
+                <li><img src="img/banner1.png"></li>
+                <li><img src="img/banner2.png"></li>
+                <li><img src="img/banner3.png"></li>
+            </ul>
+    </aside>
+    
+        <!--메인 시작 -->
+    <section id="main">
+        <img src="img/comm.gif">
+        <h2 id="board_title">자유 게시판</h2>
+        <div id="view_title_box">
+            <span>까스통님의 선물인 보드카가 정말 독하네요!!!</span>
+            <span id="info">루바토 | 조회 : 208 | 2016-04-28 (09:20)</span>
+        </div>
+        <p id="view_content">
+            까스통님 고맙습니다.<br>
+            까스통님 고맙습니다.<br>
+            까스통님 고맙습니다.<br>
+            까스통님 고맙습니다.<br>
+            까스통님 고맙습니다.<br>
+        </p>
+        <div id="comment_box">
+            <img id="title_comment" src="img/title_comment.gif">
+            <textarea></textarea>
+            <img id="ok_ripple" src="img/ok_ripple.gif">
+        </div>
+        <div id="buttons">
+            <a href="#"><img src="img/delete.png"></a>
+            <a href="board_list.html"><img src="img/list.png"></a>
+            <a href="board_write.html"><img src="img/write.png"></a>
+        </div>
+                </div>      <!-- 메인 끝 -->
+    </section>
+   
+        <footer>
+            <img id="footer_logo" src="img/footer_logo.gif">
+            <ul id="address">
+                <li>서울시 강남구 삼성동 1234 우 : 123-1234</li>
+                <li>TEL : 031-123-1234 Email : email@domain.com</li>
+                <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>
+            </ul>
+            <ul id="footer_sns">
+                <li><img src="img/facebook.gif"></li>
+                <li><img src="img/blog.gif"></li>
+                <li><img src="img/twitter.gif"></li>
+            </ul>
+        </footer>
+
+    </div>
+
+</body>
+
+
+
+</html>

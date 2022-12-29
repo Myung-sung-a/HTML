@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인덱스 파일</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family:"맑은 고딕", "돋움";
+            font-size: 12px;
+            color: #444444;
+            background-color: #f2f0f0;
+        }
+        ul {
+            list-style: none;
+        }
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: #444444;
+        }
+        .clear {
+            clear: both;
+        }
+
+        /*-----헤더------*/
+        header {
+            height: 128px;
+        }
+        header #top {
+            width: 990px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        header #logo {
+            float: left;
+            margin: 30px 0 0 0;
+            /* border: 1px solid blue; */
+        }
+        /* 검색 */
+        header #search {
+            float: left;
+            font-family: Sana-serif;
+            font-size: 12px;
+            color: #96c11f;
+            margin: 40px 0 0 150px;
+            border: 1px solid red;
+        }
+        header #search #search_title {
+            float: left;
+            margin-top: 6px;
+        }
+        header #search #search_form {
+            float: left;
+        }
+        header #search #search_form input {
+            width: 80px;
+            height: 16px;
+            border: 0;
+            background-color: #f2f0f0;
+            border-bottom: 1px solid #cccccc;
+            margin-left: 5px;
+        }
+        header #search #search_button {
+            float: left;
+            margin: 3px 0 0 3px;
+        }
+        /* 상단 메뉴 */
+        header #top_menu {
+            float: right;
+            margin-top: 45px;
+        }
+        header #top_menu a:link {
+            font-size: 11px;
+            color: #888888;
+        }
+        header #top_menu a:hover {
+            font-size: 11px;
+            color: #888888;
+        }
+        header #top_menu a:active {
+            font-size: 11px;
+            color: #888888;
+        }
+        header #top_menu li.green a:link {
+            color: #96c11f;
+        }
+        header #top_menu li.green a:visited {
+            color: #96c11f;
+        }
+        header #top_menu li.green a:hover {
+            color: #96c11f;
+        }
+        header #top_menu li.green a:active {
+            color: #96c11f;
+        }
+        header #top_menu li {
+            display: inline;
+            margin-left: 10px;
+        }
+        /* 메인 메뉴 */
+        header #main_menu {
+            height: 38px;
+            margin-top: 15px;
+            background-color: #4e4c4d;
+        }
+        header #main_menu ul {
+            width: 990px;
+            margin: auto;
+            padding-top: 12px;
+            text-align: center;
+        }
+        header #main_menu li {
+            display: inline;
+            margin: 0 57px;
+        }
+        header #main_menu a:link {
+            color: #ffffff;
+        }
+        header #main_menu a:visited {
+            color: #ffffff;
+        }
+        header #main_menu a:hover {
+            color: #ffffff;
+        }
+        header #main_menu a:active {
+            color: #ffffff;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <section id="top">
+            <a id="logo" href="index.html"><img src="img/logo.gif"></a>
+            <div id="search">
+                <div id="search_title">SEARCH</div>
+                <div id="search_form"><input type="text"></div>
+                <div id="search_button"><img src="img/btn_search.gif"></div>
+            </div>
+            <nav id="top_menu">
+                <ul>
+                    <li class="green"><a href="#">로그인</a></li>
+                    <li class="green"><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav> <!-- top_ menu-->
+            <div class="clear"></div>
+        </section> <!-- section_top-->
+        <nav id="main_menu">
+            <ul>
+                <li><a href="detail.html">상세페이지</a></li>
+                <li><a href="cart.html">장바구니</a></li>
+                <li><a href="#">고객 갤러리</a></li>
+                <li><a href="#">주문배송</a></li>
+                <li><a href="#">자주 하는 질문</a></li>
+            </ul>
+        </nav>
+    </header>       <!-- 헤더 끝-->
+    
+</body>
+</html>
