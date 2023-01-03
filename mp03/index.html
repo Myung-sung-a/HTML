@@ -129,12 +129,62 @@
         }
         header #main_menu a:active {
             color: #ffffff;
+        }   
+        /* 메인 콘텐츠*/
+        section #main {
+            width: 990px;
+            margin: auto;
+            border : 1px solid red;
         }
-
-
-
-
-
+        /* 좌측 카테고리 + 메인 이미지 + 공지사항/주간 이벤트 */
+        section #cat1 {
+            width: 215px;
+            float: left;
+            margin: 30px;
+            font-weight: bold;
+        
+        }
+        section #cat1 #cat_title {
+            padding: 12px;
+            background-color: #96c11f;
+            color: #ffffff;
+            text-align: center;
+        }
+        section #cat1 li {
+            color: #666666;
+            padding: 7px 0 7px 30px;
+            border-bottom: 1px solid #cccccc;
+        }
+        section #cat2 {
+            float: left;
+            margin-top: 15px;
+        }
+        section #cat3 {
+            width: 236px;
+            float: left;
+            margin-top: 15px;
+        }
+        section #cat3 #latest_notice {
+            width: 239px;
+            height: 161px;
+            background-image: url(img/latest_notice.gif);
+            background-repeat: no-repeat;
+        }
+        section #cat3 #latest_notice ul {
+            padding: 42px 0 0 30px;
+            list-style-image: url(img/blue_dot.gif);
+        }
+        section #cat3 #week_event {
+            width: 239px;
+            height: 191px;
+            margin-top: 11px;
+            background-image: url(img/week_event.gif);
+            background-repeat: no-repeat;
+        }
+        section #cat3 #week_event img {
+            padding: 58px 0 0 10px;
+        }
+       
 
 
     </style>
@@ -195,19 +245,33 @@
         <section id="cat3">
             <div id="latest_notice">
                 <ul>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
+                    <li> 폭설로 인한 배송지연 안내</li>
+                    <li> 폭설로 인한 배송지연 안내</li>
+                    <li> 폭설로 인한 배송지연 안내</li>
+                    <li> 폭설로 인한 배송지연 안내</li>
+                    <li> 폭설로 인한 배송지연 안내</li>
+                    <li> 폭설로 인한 배송지연 안내</li>
                 </ul>
             </div>
             <div id="week_event">
                 <img src="img/week_event_img.gif">
             </div>
-        </section> <!--section cat3 -->
+            </section> <!-- section cat3-->
+
+            <section id="special_shop">
+                <ul>
+                    <li><img src="img/special_img1.gif"></li>
+                    <li><img src="img/special_img2.gif"></li>
+                </ul>
+            </section>
+           
+
+       
     </section> <!-- section main -->
+
+  
+
+       
     
 </body>
 </html>
