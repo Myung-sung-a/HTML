@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        큐(QUE) : FIFO (First In First Out) : 먼저 들어간 값이 먼저 나오도록
+            구현된 자료 구조
+        unshift = 배열의 처음 값 앞에 값을 추가
+        shift = 배열의 첫번째 방의 값을 가지고 온 후 값을 리턴
+
+    -->
+    <script>
+        var kdata=['서울', '부산'];
+        var p1=kdata.unshift('청주', '세종');
+        document.write("데이터 : " + p1 + "<br>");
+        document.write("배열 데이터 : " + kdata + "<p/>");
+
+        var p2=kdata.shift();
+        document.write("데이터 : " + p2 + "<br>");
+        document.write("배열 데이터 : " + kdata + "<p/>");
+    </script>
+    
+</body>
+</html>

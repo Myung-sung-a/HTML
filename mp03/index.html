@@ -34,7 +34,7 @@
         header #top {
             width: 990px;
             margin: 0 auto;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         header #logo {
             float: left;
@@ -48,7 +48,7 @@
             font-size: 12px;
             color: #96c11f;
             margin: 40px 0 0 150px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         header #search #search_title {
             float: left;
@@ -134,13 +134,14 @@
         section #main {
             width: 990px;
             margin: auto;
-            border : 1px solid red;
+             border : 1px solid red; 
+             box-sizing: border-box;
         }
         /* 좌측 카테고리 + 메인 이미지 + 공지사항/주간 이벤트 */
         section #cat1 {
             width: 215px;
             float: left;
-            margin: 30px;
+            margin-top: 15px;
             font-weight: bold;
         
         }
@@ -183,6 +184,35 @@
         }
         section #cat3 #week_event img {
             padding: 58px 0 0 10px;
+        }
+        /* 스페셜 샵*/
+        section #special_shop {
+            width: 592px;
+            height: 389px;
+            margin-top: 20px;
+            float: left;
+            background-image: url(img/special_shop.gif);
+            background-repeat: no-repeat;
+        }
+        section #special_shop ul {
+            margin: 60px 0 0 25px;
+        }
+        section #special_shop li {
+            display: inline;
+            margin: 0 2px;
+        }
+        section #special_shop img {
+            padding: 20px;
+            border: 1px solid #cccccc;
+        }
+        section #special_banner {
+            float: left;
+            margin: 19px 0 0 5px;
+        }
+        section #special_banner div {
+            width: 392px;
+            height: 129px;
+            margin-top: 1px;
         }
        
 
@@ -263,7 +293,27 @@
                     <li><img src="img/special_img1.gif"></li>
                     <li><img src="img/special_img2.gif"></li>
                 </ul>
-            </section>
+            </section> <!-- section special_shop -->
+            <section id="special_banner">
+                <div id="banner1">
+                    <ul>
+                        <li><img src="img/landscape_img1.gif"></li>
+                        <li><img src="img/landscape_img2.gif"></li>
+                    </ul>
+                </div>
+                <div id="banner2">
+                    <ul>
+                        <li><img src="img/point_wallpaper_img1.gif"></li>
+                        <li><img src="img/point_wallpaper_img2.gif"></li>
+                    </ul>
+                </div>
+                <div id="banner3">
+                    <ul>
+                        <li><img src="img/children_img1.gif"></li>
+                        <li><img src="img/children_img2.gif"></li>
+                    </ul>
+                </div>
+            </section> <!-- section special_banner -->
            
 
        
