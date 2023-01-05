@@ -10,6 +10,7 @@
         section {
             width: 600px;
             height: 400px;
+            margin: 37px 0 0 20px;
             /* border: 1px solid red; */
         }
         section h2 {
@@ -85,7 +86,17 @@
 
      <!-- 자바스크립트  -->
      <script>
-        // class, id 속성을 가져와서 변수에 할당
+        /* querySelector () : css - id : #, class : .
+            
+            getElementById() : 태그 내부에 적용된 id
+            getElementByClassName() : 태그 내부에 적용된 class
+
+            엘리멘트(태그)의 속성값을 변경할 때 : 객체.setAttribute를 사용함. id 속성에만 적용되어있다.
+                class 속성에는 setAttribute 가 없다.
+
+        */
+
+        // DOM 객체를 생성
         var pics = document.getElementsByClassName("pic");
         var lightbox = document.getElementById("lightbox");
         var lightboxImage = document.getElementById("lightboxImage"); 
